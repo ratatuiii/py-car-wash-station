@@ -27,7 +27,7 @@ class CarWashStation:
         income = 0
         for car in cars:
             income += self.wash_single_car(car)
-        return income
+        return round(income, 1)
 
     def calculate_washing_price(self, car: Car) -> float:
         return round(
